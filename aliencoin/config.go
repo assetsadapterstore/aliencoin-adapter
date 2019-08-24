@@ -28,6 +28,6 @@ const (
 )
 
 var (
-	MainNetAddressPrefix = btcTransaction.AddressPrefix{[]byte{0x17}, nil, "alc"}
-	TestNetAddressPrefix = btcTransaction.AddressPrefix{[]byte{0x74}, nil, "tb"}
+	MainNetAddressPrefix = btcTransaction.AddressPrefix{P2PKHPrefix: []byte{0x17}, P2WPKHPrefix: nil, P2SHPrefix: nil, Bech32Prefix: "alc"}
+	TestNetAddressPrefix = btcTransaction.AddressPrefix{P2PKHPrefix: []byte{0x74}, P2WPKHPrefix: nil, P2SHPrefix: nil, Bech32Prefix: "tb"}
 )

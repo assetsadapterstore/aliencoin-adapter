@@ -1,2 +1,5 @@
 go.sum
-aliencoin/conf
+.idea
+*.db
+*.ini
+*.key
